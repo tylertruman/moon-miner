@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Moon Miner</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header class="container-fluid">
+        <nav class="row">
+            <div class="col-12 text-center text-warning">
+                <h1>MOON MINER</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <section class="row">
+            <div class="moon">
+                <div class="col-12 text-center">
+                    <img onclick="mine()"src="swiss-moon 1.svg">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container-fluid">
+        <section class="row mx-1">
+            
+            <div class="col-4 bg-light">
+                <h1 class="text-warning">STORE</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Click Upgrades:</h5>
+                        <button class="btn btn-pill btn-info mb-2" onclick="buyShovel()">SHOVEL<br><span id="shovelprice">10</span> Coins</button>
+                        <span>+1</span>
+                        <br>
+                        <button class="btn btn-pill btn-info mb-2" onclick="buyShovelV2()">SHOVEL V2 <br><span id="shovel2price">50</span> Coins</button>
+                        <span>+5</span>
+                    </div>
+                    <div class="col-6">
+                        <h5>Automatic Upgrades:</h5>
+                        <button class="btn btn-pill btn-danger mb-2" onclick="buyRover()">ROVER <br><span id="roverprice">250</span> Coins</button>
+                        <span>+10 / 3s</span>
+                        <br>
+                        <button class="btn btn-pill btn-danger mb-2" onclick="buyRoverV2()">ROVER V2<br><span id="rover2price">1250</span> Coins</button>
+                        <span>+100 / 3s</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 bg-light">
+                <h1 class="text-warning">STATS</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Coins Per Second:<span id="cps">0</span></p>
+                        <p>Coins Per Click:<span id="cpc">1</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 bg-light">
+                <h1 class="text-warning">INVENTORY</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Coins:<span id="coins">0</span></p>
+                        <p>Shovels:<span id="shovel">0</span></p>
+                        <p>Shovel V2s:<span id="shovel2">0</span></p>
+                        <p>Rovers:<span id="rover">0</span></p>
+                        <p>Rover V2s:<span id="rover2">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+
+
+    <script src="app.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
