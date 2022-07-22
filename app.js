@@ -97,7 +97,7 @@ let cps = 0
 function coinsPerSecond(){ 
     cps = 0 + (automaticUpgrades.rover.quantity * automaticUpgrades.rover.multiplier / 3)
     + (automaticUpgrades.rover2.quantity * automaticUpgrades.rover2.multiplier / 3)
-    document.getElementById('cps').innerText = cps
+    document.getElementById('cps').innerText = cps.toFixed(2)
 }
 
 let cpc = 1
