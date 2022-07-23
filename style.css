@@ -1,7 +1,7 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1513628253939-010e64ac66cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fHNwYWNlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
     background-size: cover;
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Edu SA Beginner', cursive;
     background-color: black;
 }
 
@@ -20,5 +20,9 @@ body {
 
 .moon-img:hover {
     cursor: pointer;
+}
+
+.bg-card {
+    background-color: rgb(165, 165, 255);
 }
 
