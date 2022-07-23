@@ -1,5 +1,24 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1513628253939-010e64ac66cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fHNwYWNlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60);
     background-size: cover;
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: black;
+}
+
+@media only screen and (max-width: 461px){
+    h5 {
+        font-size: .8rem;
+    }
+    .mobile-text {
+        font-size: .72rem;
+    }
+}
+
+.cool-text {
+    font-size: 3.5rem;
+}
+
+.moon-img:hover {
+    cursor: pointer;
 }
 

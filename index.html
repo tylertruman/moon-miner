@@ -10,82 +10,77 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;700&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
   </head>
   <body>
-
     <header class="container-fluid">
         <nav class="row">
             <div class="col-12 text-center text-warning">
-                <h1>MOON MINER</h1>
+                <h1 class="pt-2 cool-text"><b>MOON MINER</b></h1>
             </div>
         </nav>
     </header>
-
     <main class="container-fluid">
         <section class="row">
-            <div class="moon">
-                <div class="col-12 text-center">
-                    <img onclick="mine()"src="swiss-moon 1.svg">
+            <div class="moon text-center">
+                <div class="col-12">
+                    <img class="moon-img img-fluid" onclick="mine()"src="swiss-moon 1.svg">
                 </div>
 
             </div>
         </section>
-
     </main>
-
     <footer class="container-fluid">
-        <section class="row mx-1">
-            
-            <div class="col-4 bg-light">
+        <section class="row my-3 justify-content-around">
+            <div class="col-12 col-lg-4 mb-lg-0 mb-3 bg-light rounded">
                 <h1 class="text-warning">STORE</h1>
                 <div class="row">
                     <div class="col-6">
                         <h5>Click Upgrades:</h5>
-                        <button class="btn btn-pill btn-info mb-2" onclick="buyShovel()">SHOVEL<br><span id="shovelprice">10</span> Coins</button>
-                        <span>+1</span>
+                        <button class="btn btn-pill btn-warning mb-2 px-4" onclick="buyShovel()">SHOVEL<br><span id="shovelprice">10</span> Coins</button>
+                        <span class="mobile-text">+<span>1</span></span>
                         <br>
-                        <button class="btn btn-pill btn-info mb-2" onclick="buyShovelV2()">SHOVEL V2 <br><span id="shovel2price">50</span> Coins</button>
-                        <span>+5</span>
+                        <button class="btn btn-pill btn-warning mb-2 px-3" onclick="buyShovelV2()">SHOVEL V2 <br><span id="shovel2price">50</span> Coins</button>
+                        <span class="mobile-text">+<span>5</span></span>
                     </div>
                     <div class="col-6">
-                        <h5>Automatic Upgrades:</h5>
-                        <button class="btn btn-pill btn-danger mb-2" onclick="buyRover()">ROVER <br><span id="roverprice">250</span> Coins</button>
-                        <span>+10 / 3s</span>
+                        <h5 class="">Automatic Upgrades:</h5>
+                        <button class="btn btn-pill btn-warning mb-2 px-3" onclick="buyRover()">ROVER <br><span id="roverprice">250</span> Coins</button>
+                        <span class="mobile-text">+10 / s</span>
                         <br>
-                        <button class="btn btn-pill btn-danger mb-2" onclick="buyRoverV2()">ROVER V2<br><span id="rover2price">1250</span> Coins</button>
-                        <span>+100 / 3s</span>
-
+                        <button class="btn btn-pill btn-warning mb-2" onclick="buyRoverV2()">ROVER V2<br><span id="rover2price">1250</span> Coins</button>
+                        <span class="mobile-text">+100 / s</span>
                     </div>
                 </div>
             </div>
-            <div class="col-4 bg-light">
+            <div class="col-12 col-lg-3 mb-lg-0 mb-3 bg-light rounded">
                 <h1 class="text-warning">STATS</h1>
                 <div class="row">
                     <div class="col-12">
-                        <p>Coins Per Second: <span id="cps">0</span></p>
-                        <p>Coins Per Click: <span id="cpc">1</span></p>
+                        <p id="cps-p">Coins Per Second: <span class="text-danger"id="cps">0.00</span></p>
+                        <p>Coins Per Click: <span class="text-success" id="cpc">1</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-4 bg-light">
+            <div class="col-12 col-lg-4 mb-lg-0 mb-3 bg-light rounded">
                 <h1 class="text-warning">INVENTORY</h1>
                 <div class="row">
                     <div class="col-12">
-                        <p>Coins: <span id="coins">0</span></p>
-                        <p>Shovels: <span id="shovel">0</span></p>
-                        <p>Shovel V2s: <span id="shovel2">0</span></p>
-                        <p>Rovers: <span id="rover">0</span></p>
-                        <p>Rover V2s: <span id="rover2">0</span></p>
+                        <p id="coins-p">Coins: <span class="text-danger" id="coins">0</span></p>
+                        <p id="shovel-p">Shovels: <span class="text-danger" id="shovel">0</span></p>
+                        <p id="shovel2-p">Shovel V2s: <span class="text-danger" id="shovel2">0</span></p>
+                        <p id="rover-p">Rovers: <span class="text-danger" id="rover">0</span></p>
+                        <p id="rover2-p">Rover V2s: <span class="text-danger" id="rover2">0</span></p>
                     </div>
                 </div>
             </div>
         </section>
-
     </footer>
-
-
-
-
 
     <script src="app.js"></script>
 
