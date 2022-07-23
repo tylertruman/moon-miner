@@ -80,6 +80,7 @@ function buyRover(){
         document.getElementById('roverprice').innerText = automaticUpgrades.rover.price
         document.getElementById('rover-p').innerHTML = 
         `Rovers: <span class="text-success" id="rover">${automaticUpgrades.rover.quantity}</span>`
+        coinsPerSecond()
     }
 }
 
@@ -94,6 +95,7 @@ function buyRoverV2(){
         document.getElementById('rover2price').innerText = automaticUpgrades.rover2.price
         document.getElementById('rover2-p').innerHTML = 
         `Rover V2s: <span class="text-success" id="rover2">${automaticUpgrades.rover2.quantity}</span>`
+        coinsPerSecond()
     }
 }
 
