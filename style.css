@@ -7,10 +7,19 @@ body {
 
 @media only screen and (max-width: 461px){
     h5 {
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
     .mobile-text {
-        font-size: .72rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 462px){
+    h5 {
+        font-size: 1.5rem;
+    }
+    .mobile-text {
+        font-size: 1.3rem;
     }
 }
 
@@ -23,6 +32,5 @@ body {
 }
 
 .bg-card {
-    background-color: rgb(165, 165, 255);
+    background-color: rgba(144, 178, 245, 0.93);
 }
-
